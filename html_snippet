@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>House Price Prediction</h1>
+
+        <!-- Form to input house details -->
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="size">Size (in sq ft):</label>
+                <input type="number" id="size" name="size" placeholder="Enter house size" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" placeholder="Enter number of bedrooms" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Predict Price</button>
+        </form>
+
+        <!-- Placeholder for the prediction result -->
+        <div id="result" class="result">
+            <!-- The predicted price will be shown here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
